@@ -9,13 +9,9 @@ import pandas as pd
 from eugenium_mmd import MMD_3_Sample_Test
 from scipy.stats import ks_2samp
 import mmd
-from sklearn.svm import SVC
 from sklearn.metrics import classification_report, precision_recall_fscore_support, accuracy_score, roc_auc_score, average_precision_score
 from sklearn.ensemble import RandomForestClassifier
 import sklearn
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 
 # for keras
 import keras

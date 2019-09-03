@@ -1,20 +1,13 @@
 import numpy as np
 import tensorflow as tf
-import pdb
-import random
 import json
-from scipy.stats import mode
 
 import data_utils
 import plotting
 import model
 import utils
-import eval
-import DR_discriminator
 
 from time import time
-from math import floor
-from mmd import rbf_mmd2, median_pairwise_distance, mix_rbf_mmd2_and_ratio
 
 begin = time()
 

@@ -2,10 +2,8 @@ import numpy as np
 import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
-import pdb
-from time import time
 from matplotlib.colors import hsv_to_rgb
-from pandas import read_table, read_hdf
+from pandas import read_table
 
 def plot_label(label, id):
 

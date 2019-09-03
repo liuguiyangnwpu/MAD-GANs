@@ -3,6 +3,7 @@
 import argparse
 import json
 
+
 def rgan_options_parser():
     """
     Define parser to parse options from command line, with defaults.

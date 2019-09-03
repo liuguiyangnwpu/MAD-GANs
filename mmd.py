@@ -8,9 +8,7 @@ import tensorflow as tf
 
 from tf_ops import dot, sq_sum
 
-from scipy.spatial.distance import pdist
-from numpy import median, vstack, einsum
-import pdb
+from numpy import median, einsum
 import numpy as np
 
 _eps=1e-8
