@@ -14,7 +14,6 @@ eugene.belilovsky@inria.fr
 import numpy as np
 import scipy as sp
 from numpy import sqrt
-from sklearn.metrics.pairwise import rbf_kernel
 from functools import partial
 import pdb
 
