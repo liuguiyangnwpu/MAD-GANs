@@ -1,0 +1,7 @@
+.idea/*
+data/*
+experiments/*
+experiments/parameters/*
+__pycache__/*
+*.pyc
+.DS_Store

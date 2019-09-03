@@ -8,7 +8,8 @@ import sys
 from mod_core_rnn_cell_impl import LSTMCell  # modified to allow initializing bias in lstm
 
 # from tensorflow.contrib.rnn import LSTMCell
-tf.logging.set_verbosity(tf.logging.ERROR)
+# tf.logging.set_verbosity(tf.logging.ERROR)
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 import mmd
 
 from differential_privacy.dp_sgd.dp_optimizer import dp_optimizer

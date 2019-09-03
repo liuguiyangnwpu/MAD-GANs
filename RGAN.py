@@ -18,7 +18,8 @@ from mmd import rbf_mmd2, median_pairwise_distance, mix_rbf_mmd2_and_ratio
 
 begin = time()
 
-tf.logging.set_verbosity(tf.logging.ERROR)
+# tf.logging.set_verbosity(tf.logging.ERROR)
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 # --- get settings --- #
 # parse command line arguments, or use defaults
@@ -46,7 +47,19 @@ for (k, v) in settings.items(): print(v, '\t', k)
 # add the settings to local environment
 # WARNING: at this point a lot of variables appear
 locals().update(settings)
-json.dump(settings, open('./experiments/settings/' + identifier + '.txt', 'w'), indent=0)
+json.dump(settings, open('./experiments/settings/' + settings["identifier"] + '.txt', 'w'), indent=0)
+
+identifier = settings["identifier"]
+batch_size = settings["batch_size"]
+seq_length = settings["seq_length"]
+latent_dim = settings["latent_dim"]
+learning_rate = settings["learning_rate"]
+l2norm_bound = settings["l2norm_bound"]
+batches_per_lot = settings["batches_per_lot"]
+dp_sigma = settings["dp_sigma"]
+dp = settings["dp"]
+num_epochs = settings["num_epochs"]
+sub_id = settings["sub_id"]
 
 # --- build model --- #
 # preparation: data placeholders and model parameters
